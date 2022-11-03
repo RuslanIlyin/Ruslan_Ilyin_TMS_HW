@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Task1 {
 
     public static void main(String[] args) {
-        System.out.println("Введите любое положительное целое число ");
         Scanner scan = new Scanner(System.in);
+        int num = 0;
+
+        System.out.println("Введите любое положительное целое число ");
         int number = scan.nextInt();
         System.out.println("Вы ввели число " + number);
-
-        int num = 0;
         String banderOstap = "Вы прямо герой труда";
 
         if (number > 0 && number < 15) {
@@ -26,7 +26,6 @@ public class Task1 {
         else {
             System.out.println("Вы ввели невереное число ");
         }
-
         if (num == 1) {
             System.out.println(banderOstap);
         } else if (num == 2) {
@@ -38,7 +37,5 @@ public class Task1 {
                 System.out.println(banderOstap);
             }
         }
-
-
     }
 }
